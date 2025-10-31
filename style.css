@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 15px 60px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .c {
+    margin-left: 300px;
+    font-weight: bold;
+  }
+  .logo img {
+    width: 90px;
+    height: 90px;
+  }
+  .logo span {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+  }
+  .nav-links a {
+    text-decoration: none;
+    color: #2e3a59;
+    font-weight: 500;
+    transition: color 0.3s;
+    text-transform: capitalize;
+  }
+  .nav-links a:hover {
+    color: blue;
+  }
+  .nav-buttons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    color: #2e3a59;
+  }
+  .nav-buttons a:hover {
+    color: blue;
+  }
+  .login {
+    color: #2e3a59;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .signup {
+    color: #2e3a59;
+    padding: 8px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s;
+  }
+  .signup :hover {
+    color: blue;
+  }
+  .home{
+    width: 300px;
+    height: 250px;
+  }
