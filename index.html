@@ -10,26 +10,196 @@
     <header>
       <nav class="navbar">
         <div class="logo">
-          <img class="home" width="40 px" height="35px"
+          <img
+            class="home"
+            width="40 px"
+            height="35px"
             src="rental-property-removebg-preview.png"
             alt="home rental logo logo"
           />
-          <span>HOME RENTAL SERVICE <br>"Find it. Rent it. Live it."</span>
+          <span>HOME RENTAL SERVICE <br />"Find it. Rent it. Live it."</span>
         </div>
         <ul class="nav-links">
           <li><a href="index.html">home</a></li>
-          <li><a href="about.html">about</a></li>
+          <li><a href="about.html">about Us</a></li>
+          <li><a href="contact.html">contact Us</a></li>
           <li><a href="explore.html">explore</a></li>
           <li><a href="review.html">review</a></li>
         </ul>
         <div class="nav-buttons">
-          <a href="#" class="login">login</a>
-          <a href="#" class="signup">Sign Up</a>
+          <a href="login.html" class="login">login</a>
+          <a href="signup.html" class="signup">Sign Up</a>
         </div>
       </nav>
     </header>
-            <div class="home">
-          <img src="ren logo.jpg" alt="">
-            </div>
+    <div class="main">
+      <div>
+        <h3>
+          Your trusted partner for finding the perfect place for your living.
+        </h3>
+      </div>
+      <div>
+        <img src="ren_logo-removebg-preview.png" alt="" />
+      </div>
+    </div>
+
+    <div class="card_section">
+      <h2 class="heading_1">PLACES AVAILABLE.</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>HOUSE 1</h3>
+          <img src="house.jpeg" alt="" width="400px" height="300px" />
+          <p><strong>Area:</strong> West End</p>
+          <p>
+            <strong>Location:</strong> #4 Hill cott road wash car, along the
+            highway.
+          </p>
+          <p><strong>Bedroom: 3 | Bathroom: 3 Selfcontain</strong></p>
+          <p><strong>Fenced Compound with car park</strong></p>
+          <p><strong>Price:</strong> Le 20,000 Per year (Negotiable)</p>
+          <a href="view.html" class="sub"> View More</a>
+        </div>
+        <div class="card">
+          <h3>HOUSE 2</h3>
+          <img src="h3.jpg" alt="" width="400px" height="300px" />
+          <p><strong>Area:</strong> East End</p>
+          <p><strong>Location:</strong> Calaba Town</p>
+          <p><strong>Single Room and Palor Selfcontain</strong></p>
+          <p><strong> Unfenced Compound</strong></p>
+          <p><strong>Price:</strong> Le 10,000 Per year (Negotiable)</p>
+          <a href="view.html" class="sub"> View More</a>
+        </div>
+        <div class="card">
+          <h3>HOUSE 3</h3>
+          <img src="h.jpg" alt="" width="400px" height="300px" />
+          <p><strong>Area:</strong> Central</p>
+          <p><strong>Location:</strong> # 10 Regent road</p>
+          <p><strong>Bedroom: 5 | Bathroom: 4 Selfcontain</strong></p>
+          <p><strong>Fenced Compound with car park</strong></p>
+          <p><strong>Price:</strong> Le 60,000 Per year (Negotiable)</p>
+          <a href="view.html" class="sub"> View More</a>
+        </div>
+        <div class="card">
+          <h3>HOUSE 4</h3>
+          <img src="h3.jpg" alt="" width="400px" height="300px" />
+          <p><strong>Area:</strong> Central</p>
+          <p><strong>Location:</strong> # 10 Ecowas Street</p>
+          <p>
+            <strong
+              >Bedroom: 3 | Bathroom: 3 Selfcontain, full Apartment with office
+              area</strong
+            >
+          </p>
+          <p><strong>Fenced Compound with car park</strong></p>
+          <p><strong>Price:</strong> Le 60,000 Per year (Negotiable)</p>
+          <a href="view.html" class="sub"> View More</a>
+        </div>
+        <div class="card">
+          <h3>HOUSE 5</h3>
+          <img src="hou.jpg" alt="" width="400px" height="300px" />
+          <p><strong>Area:</strong> Western Area</p>
+          <p>
+            <strong>Location:</strong> # 5 Freetown road Lumley, along the
+            highway
+          </p>
+          <p><strong>Bedroom: 2 | Bathroom: 3 Selfcontain.</strong></p>
+          <p><strong>Fenced Compound with car park</strong></p>
+          <p><strong>Price:</strong> Le 35,000 Per year (Negotiable)</p>
+          <a href="view.html" class="sub"> View More</a>
+        </div>
+        <div class="card">
+          <h3>HOUSE 6</h3>
+          <img src="house.jpeg" alt="" width="400px" height="300px" />
+          <p><strong>Area:</strong> Central</p>
+          <p><strong>Location:</strong> # 2 Ecowas Street</p>
+          <p>
+            <strong
+              >Bedroom: 3 | Bathroom: 3 Selfcontain, full Apartment with office
+              area</strong
+            >
+          </p>
+          <p><strong>Fenced Compound with car park</strong></p>
+          <p><strong>Price:</strong> Le 60,000 Per year (Negotiable)</p>
+          <a href="view.html" class="sub"> View More</a>
+        </div>
+      </div>
+    </div>
+
+    <section class="image-slider">
+      <div class="slides">
+        <img src="hou.jpg" class="active" alt="House 1" />
+        <img src="h3.jpg" alt="House 2" />
+        <img src="house.jpeg" alt="House 3" />
+      </div>
+
+      <!-- Navigation Buttons -->
+      <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+      <button class="next" onclick="changeSlide(1)">&#10095;</button>
+
+      <!-- Dots -->
+      <div class="dots">
+        <span class="dot active" onclick="showSlide(0)"></span>
+        <span class="dot" onclick="showSlide(1)"></span>
+        <span class="dot" onclick="showSlide(2)"></span>
+      </div>
+    </section>
+
+    <section class="house-details">
+      <p><strong>Area:</strong>Western Area</p>
+      <p><strong>Adress:</strong>4 Hill Cott Road Wash Car</p>
+      <p><strong>Price:</strong>Le5,000 per year (Negotiable)</p>
+      <p><strong>Bedrooms:</strong> 3 | <strong>Bathrooms:</strong> 2</p>
+      <p><strong>Status:</strong> Fenced</p>
+      <a href="book.html" class="sub">Book Now</a>
+    </section>
+
+    <!-- <footer>© 2025 Home Rental Service. All rights reserved.</footer> -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-about">
+          <h3>Home Rental Service</h3>
+          <p>
+            Find your perfect home easily and affordably. We connect you to
+            quality rentals across Sierra Leone with trusted listings and
+            reliable service.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Abou Ust</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+           
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <p>📍 4 Hill Cott Road, Wash Car, Freetown</p>
+          <p>📞 +232-76-462-218</p>
+          <p>alhassansamura01@gmail.com</p>
+        </div>
+
+        <!-- <div class="footer-social">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/Alhasan Samura"
+              ><a alt="Facebook"></a>
+            <a href="https://www.tiktok.com/Young Laas"><a alt="Tiktok" ></a>
+            <a href="#"></a> alt="Instagram" /></a>
+            <a href="https://wa.me/23234103244"></a alt="Whatsapp" ></a>
+          </div>
+        </div> -->
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          © 2025 Home Rental Service. All Rights Reserved. </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>

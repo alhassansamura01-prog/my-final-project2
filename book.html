@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>explore</title>
+    <title>Booking Information</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -29,6 +29,25 @@
         </div>
       </nav>
     </header>
-    <h1>hi</h1>
+    <h1>Booking</h1>
+    <form
+      action="mailto:info@homerental.com"
+      method="post"
+      enctype="text/plain"
+    >
+      <label>Full Name:</label>
+      <input type="text" name="fullname" required /> <br />
+
+      <label>Email or Phone:</label>
+      <input type="text" name="emailphone" required /> <br />
+
+      <label>Phone Number:</label>
+      <input type="text" name="phonenumber" required /> <br />
+
+      <label>Expected Date To View The House/Place:</label>
+      <input type="date" name="date" required /> <br />
+
+      <button type="submit">Submit Booking</button>
+    </form>
   </body>
 </html>
