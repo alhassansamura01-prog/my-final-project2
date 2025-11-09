@@ -115,6 +115,20 @@ span {
   padding: 5px;
   text-decoration: none;
 }
+.subb {
+  padding: 2px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  background-color: blue;
+  cursor: pointer;
+  text-align: center;
+}
+.b {
+  gap: 100px;
+  display: flex;
+  /* justify-content: space-between; */
+}
 .sub {
   padding: 0;
   border-radius: 5px;
@@ -139,7 +153,7 @@ span {
 .forms form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 1px;
   justify-content: center;
   padding: 10px;
 }

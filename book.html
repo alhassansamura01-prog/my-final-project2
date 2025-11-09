@@ -29,25 +29,51 @@
         </div>
       </nav>
     </header>
-    <h1>Booking</h1>
-    <form
-      action="mailto:info@homerental.com"
-      method="post"
-      enctype="text/plain"
-    >
-      <label>Full Name:</label>
-      <input type="text" name="fullname" required /> <br />
+    <div class="co">
+      <h1>Booking</h1>
+      <form
+        action="https://formspree.io/f/mvgvewwn"
+        method="post"
+        class="forms"
+      >
+        <input type="hidden" id="booking-code" name="Booking Code" />
+        <label>Full Name:</label>
+        <input type="text" name="Fullname" required /> <br />
 
-      <label>Email or Phone:</label>
-      <input type="text" name="emailphone" required /> <br />
+        <label>Email or Phone:</label>
+        <input type="text" name="email/phone" required /> <br />
 
-      <label>Phone Number:</label>
-      <input type="text" name="phonenumber" required /> <br />
+        <label>Phone Number:</label>
+        <input type="tele" name="Phone number" required /> <br />
 
-      <label>Expected Date To View The House/Place:</label>
-      <input type="date" name="date" required /> <br />
+        <label>Expected Date To View The House/Place:</label>
+        <input
+          type="date"
+          name="Expected date to view the house/place"
+          required
+        />
+        <br />
 
-      <button type="submit">Submit Booking</button>
-    </form>
+        <label>House Reference Number</label>
+        <input type="text" name="house number" required /> <br />
+
+        <button type="submit">Submit Booking</button>
+      </form>
+    </div>
+    <!-- Generate Random booking code -->
+    <script>
+      function generateBookingcode() {
+        const now = new Date();
+        return (
+          "HRS-" +
+          now.getfullYear() +
+          "-" +
+          Math.floor(1000 + Math.random() * 9000)
+        );
+        const bookingcode = generateBookingcode();
+        document.getElementId("booking-code").val;
+        ue = bookingcode;
+      }
+    </script>
   </body>
 </html>
