@@ -211,17 +211,6 @@
           <p>📞 +232-76-462-218</p>
           <p>alhassansamura01@gmail.com</p>
         </div>
-
-        <!-- <div class="footer-social">
-          <h4>Follow Us</h4>
-          <div class="social-icons">
-            <a href="https://www.facebook.com/Alhasan Samura"
-              ><a alt="Facebook"></a>
-            <a href="https://www.tiktok.com/Young Laas"><a alt="Tiktok" ></a>
-            <a href="#"></a> alt="Instagram" /></a>
-            <a href="https://wa.me/23234103244"></a alt="Whatsapp" ></a>
-          </div>
-        </div> -->
       </div>
 
       <!-- save the house name and go to booking -->
@@ -236,6 +225,19 @@
         <p>© 2025 Home Rental Service. All Rights Reserved.</p>
       </div>
     </footer>
+
+    <script>
+      function bookHouse(houseName) {
+        localStorage.setItem("selectedHouse", houseName);
+        window.location.href = "book.html";
+      }
+
+      // Toggle navbar on small screens
+      function toggleMenu() {
+        const nav = document.querySelector(".nav-links");
+        nav.classList.toggle("active");
+      }
+    </script>
 
     <script src="script.js"></script>
   </body>

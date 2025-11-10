@@ -72,6 +72,118 @@
 span {
   color: white;
 }
+
+/* New Added CSS */
+/* ======= Responsive Navigation ======= */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0d47a1;
+  padding: 10px 20px;
+  color: white;
+  flex-wrap: wrap;
+}
+
+.navbar .logo span {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-buttons a {
+  color: white;
+  background: #1565c0;
+  padding: 6px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+}
+
+/* ======= Card Section ======= */
+.cards {
+ 
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+ 
+}
+
+/* ======= Footer ======= */
+.footer {
+  background: #0d47a1;
+  color: white;
+  padding: 30px 15px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-about,
+.footer-links,
+.footer-contact {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 0.9rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 10px;
+}
+
+/* ======= Mobile Responsive ======= */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #1565c0;
+    width: 100%;
+    padding: 15px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .main {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .main {
   padding: 0;
   margin: 0;
@@ -139,16 +251,32 @@ span {
   align-items: center;
 }
 .co {
-  margin-left: 50px;
-  padding: 10px;
+  max-width: 600px;
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
 }
-.form {
+.submit_button {
+  background-color: blue;
+  color: white;
+  border-radius: 12px;
+}
+/* .form {
   height: 400px;
   width: 80%;
 }
 .forms {
   height: 400px;
   width: 50%;
+   max-width: 500px;
+  width: 90%;
+  margin: 60px auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
 }
 .forms form {
   display: flex;
@@ -163,7 +291,66 @@ textarea {
   width: 50%;
   font-style: italic;
   border-radius: 10px;
+} */
+
+.forms {
+  max-width: 500px;
+  width: 90%;
+  margin: 60px auto;
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 12px;
+  /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); */
 }
+
+.forms h3 {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.forms label {
+  display: block;
+  margin-top: 12px;
+  font-weight: 600;
+  color: #333;
+}
+
+.forms input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.forms input:focus {
+  border-color: #004aad;
+}
+
+@media (max-width: 600px) {
+  .forms {
+    padding: 20px;
+    margin: 30px 10px;
+  }
+
+  .forms h2 {
+    font-size: 22px;
+  }
+
+  .forms label {
+    font-size: 14px;
+  }
+
+  .forms input,
+  .forms button {
+    font-size: 15px;
+    padding: 10px;
+  }
+}
+
 /* New Added */
 
 /* ===== Booking Form Styling ===== */
@@ -172,14 +359,14 @@ textarea {
   width: 90%;
   margin: 60px auto;
   background: #ffffff;
-  padding: 30px;
+  padding: 10px;
   border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); */
 }
 
 .booking-form h2 {
   text-align: center;
-  color: #004aad;
+  /* color: #004aad; */
   font-size: 26px;
   margin-bottom: 20px;
 }
@@ -211,7 +398,7 @@ textarea {
   margin-top: 25px;
   padding: 14px;
   background: #004aad;
-  color: #fff;
+  color: white;
   font-size: 17px;
   font-weight: bold;
   border: none;
@@ -227,7 +414,7 @@ textarea {
 .booking-code-display {
   margin-top: 15px;
   text-align: center;
-  color: #007bff;
+  /* color: #007bff; */
   font-weight: bold;
 }
 
@@ -450,9 +637,9 @@ textarea {
 } */
 
 .about-container {
-  /* max-width: 1100px; */
+  max-width: 1100px;
   margin-left: 50px;
-  /* margin: 60px auto; */
+  margin: 60px auto;
   /* background: #fff; */
   padding: 20px;
   border-radius: 15px;

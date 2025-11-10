@@ -21,3 +21,7 @@ function showSlide(index) {
 function changeSlide(direction) {
   showSlide(currentSlide + direction);
 }
+function bookHouse(houseName) {
+  localStorage.setItem("selectedHouse", houseName);
+  Window.location.href = "book.html";
+}
