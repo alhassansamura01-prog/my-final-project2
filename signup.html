@@ -27,6 +27,8 @@
           <a href="login.html" class="login">login</a>
           <a href="signup.html" class="signup">Sign Up</a>
         </div>
+        <!-- Hamburger Button -->
+        <button class="menu-toggle" id="menu-toggle">☰</button>
       </nav>
     </header>
     <h4>Create Account</h4>
@@ -37,5 +39,19 @@
       <button type="submit">Sign Up</button>
       <p>Already have an account? <a href="login.html">Login</a></p>
     </form>
+
+    <script>
+      const toggleButton = document.getElementById("menu-toggle");
+      const navLinks = document.querySelector(".nav-links");
+      const navButtons = document.querySelector(".nav-buttons");
+      toggleButton.addEventListener("click", () => {
+        navLinks.classList.toggle("show");
+        navButtons.classList.toggle("show");
+        toggleButton.classList.toggle("active");
+        toggleButton.textContent = toggleButton.classList.contains("active")
+          ? "x"
+          : "☰";
+      });
+    </script>
   </body>
 </html>

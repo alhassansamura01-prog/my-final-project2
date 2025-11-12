@@ -27,6 +27,8 @@
           <a href="login.html" class="login">login</a>
           <a href="signup.html" class="signup">Sign Up</a>
         </div>
+        <!-- Hamburger Button -->
+        <button class="menu-toggle" id="menu-toggle">☰</button>
       </nav>
     </header>
 
@@ -34,13 +36,7 @@
       <h2 class="heading_1">HOUSE 3</h2>
       <div class="cards">
         <div class="card">
-          <img
-            src="h.jpg"
-            alt=""
-            width="480px"
-            height="400px"
-            loading="lazy"
-          />
+          <img src="h.jpg" alt="" width="480px" height="400px" loading="lazy" />
         </div>
         <div class="card">
           <img
@@ -91,12 +87,28 @@
     </div>
     <div class="vw">
       <p><strong>Area:</strong> Central</p>
-          <p><strong>Location:</strong> # 10 Regent road</p>
-          <p><strong>Bedroom: 5 | Bathroom: 4 Selfcontain</strong></p>
-          <p><strong>Fenced Compound with car park</strong></p>
-          <p><strong>Price:</strong> Le 60,000 Per year (Negotiable)</p>
+      <p><strong>Location:</strong> # 10 Regent road</p>
+      <p><strong>Bedroom: 5 | Bathroom: 4 Selfcontain</strong></p>
+      <p><strong>Fenced Compound with car park</strong></p>
+      <p><strong>Price:</strong> Le 60,000 Per year (Negotiable)</p>
 
-      <a href="book.html?house=3" class="subb" onclick="bookHouse(`House 3`)"> Book Now</a>
+      <a href="book.html?house=3" class="subb" onclick="bookHouse(`House 3`)">
+        Book Now</a
+      >
     </div>
+
+    <script>
+      const toggleButton = document.getElementById("menu-toggle");
+      const navLinks = document.querySelector(".nav-links");
+      const navButtons = document.querySelector(".nav-buttons");
+      toggleButton.addEventListener("click", () => {
+        navLinks.classList.toggle("show");
+        navButtons.classList.toggle("show");
+        toggleButton.classList.toggle("active");
+        toggleButton.textContent = toggleButton.classList.contains("active")
+          ? "x"
+          : "☰";
+      });
+    </script>
   </body>
 </html>

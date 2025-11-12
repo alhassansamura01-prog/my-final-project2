@@ -27,6 +27,8 @@
           <a href="login.html" class="login">login</a>
           <a href="signup.html" class="signup">Sign Up</a>
         </div>
+        <!-- Hamburger Button -->
+        <button class="menu-toggle" id="menu-toggle">☰</button>
       </nav>
     </header>
 
@@ -98,7 +100,23 @@
 
       <p><strong>Price:</strong> Le 20,000 (Negotiable)</p>
 
-      <a href="book.html?house=2" class="subb" onclick="bookHouse(`House 2`)"> Book Now</a>
+      <a href="book.html?house=2" class="subb" onclick="bookHouse(`House 2`)">
+        Book Now</a
+      >
     </div>
+
+    <script>
+      const toggleButton = document.getElementById("menu-toggle");
+      const navLinks = document.querySelector(".nav-links");
+      const navButtons = document.querySelector(".nav-buttons");
+      toggleButton.addEventListener("click", () => {
+        navLinks.classList.toggle("show");
+        navButtons.classList.toggle("show");
+        toggleButton.classList.toggle("active");
+        toggleButton.textContent = toggleButton.classList.contains("active")
+          ? "x"
+          : "☰";
+      });
+    </script>
   </body>
 </html>

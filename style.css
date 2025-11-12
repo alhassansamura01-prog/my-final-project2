@@ -121,9 +121,7 @@ span {
 
 /* ======= Card Section ======= */
 .cards {
- 
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
- 
 }
 
 /* ======= Footer ======= */
@@ -182,6 +180,46 @@ span {
     flex-direction: column;
     align-items: center;
   }
+}
+
+/* Menu-toggle Button */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+}
+/* Large Screen */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+/* For Phones or Tablet */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+  .nav-links,
+  .nav-buttons {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+  .nav-links.show,
+  .nav-buttons.show {
+    display: flex;
+  }
+  .navbar {
+    flex-wrap: wrap;
+  }
+}
+/* Hamburger To X Animation */
+.menu-toggle.active {
+  transform: rotate(90deg);
 }
 
 .main {
