@@ -242,18 +242,23 @@ span {
   background-color: #f8f9fa;
 }
 /* Available places */
+.card_section {
+  display: flex;
+  flex-wrap: wrap;
+}
 .cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 30px;
   width: 100%;
-  padding: 20px;
-  margin: 20px;
-  /* border: 5px solid red; */
+  height: 100%;
+  padding: 15px;
+  margin: 15px;
 }
 .card {
-  width: 450px;
-  height: 402px;
+  width: 400px;
+  height: 460px;
+
   /* border: 5px solid blue; */
   border-radius: 10px;
   /* background-image: url(OIP.webp  ); */
@@ -721,4 +726,86 @@ ul li {
   .about-container h1 {
     font-size: 1.9rem;
   }
+}
+
+/* ===== REVIEW PAGE ===== */
+.review-section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 10px;
+}
+
+.review-section h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.rating-summary {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.rating-summary h3 {
+  font-size: 24px;
+  color: #ffcc00;
+}
+
+.review-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 15px;
+  margin-bottom: 35px;
+}
+
+.review-card {
+  background: #f3f3f3;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.review-card h4 {
+  color: #ff9900;
+}
+
+.review-card span {
+  font-size: 12px;
+  color: #555;
+}
+
+/* Review Form */
+.review-form {
+  background: #003366;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.review-form h3 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.review-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.review-form input,
+.review-form select,
+.review-form textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+
+.review-form button {
+  background: #ff9900;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 18px;
 }

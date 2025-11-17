@@ -31,7 +31,6 @@
         <button class="menu-toggle" id="menu-toggle">☰</button>
       </nav>
     </header>
-    <h1>hi</h1>
 
     <script>
       const toggleButton = document.getElementById("menu-toggle");
@@ -46,5 +45,56 @@
           : "☰";
       });
     </script>
+
+    <section class="review-section">
+      <h2>Customer Reviews</h2>
+
+      <!-- Rating Summary -->
+      <div class="rating-summary">
+        <h3>⭐ 4.8 / 5</h3>
+        <p>Based on 126 reviews</p>
+      </div>
+
+      <!-- Review List -->
+      <div class="review-list">
+        <div class="review-card">
+          <h4>⭐ ⭐ ⭐ ⭐ ⭐</h4>
+          <p>"Very trusted company. I booked a house easily without stress."</p>
+          <span>- Mariama K, Feb 2025</span>
+        </div>
+
+        <div class="review-card">
+          <h4>⭐ ⭐ ⭐ ⭐</h4>
+          <p>"Fast response and very professional service."</p>
+          <span>- Abu B, Jan 2025</span>
+        </div>
+
+        <div class="review-card">
+          <h4>⭐ ⭐ ⭐ ⭐ ⭐</h4>
+          <p>"They secured my property very well. Highly recommended!"</p>
+          <span>- Jalloh M, Dec 2024</span>
+        </div>
+      </div>
+
+      <!-- Add Review Form -->
+      <div class="review-form">
+        <h3>Write a Review</h3>
+        <form>
+          <input type="text" placeholder="Your Name" required />
+
+          <select required>
+            <option value="">Select Rating</option>
+            <option>⭐ ⭐ ⭐ ⭐ ⭐</option>
+            <option>⭐ ⭐ ⭐ ⭐</option>
+            <option>⭐ ⭐ ⭐</option>
+            <option>⭐ ⭐</option>
+            <option>⭐</option>
+          </select>
+
+          <textarea placeholder="Your Review..." required></textarea>
+          <button type="submit">Submit Review</button>
+        </form>
+      </div>
+    </section>
   </body>
 </html>
